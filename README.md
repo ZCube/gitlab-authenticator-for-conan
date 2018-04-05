@@ -12,9 +12,9 @@ url = https://gitlab.example.com
 ~~~
 
 3. modify ~/.conan_server/server.conf
+ 
 ~~~
 ...
-
 custom_authenticator: gitlab_authenticator # must do !
 
 # permission setting example
@@ -25,7 +25,6 @@ custom_authenticator: gitlab_authenticator # must do !
 [read_permissions]
 # */*@*/*: zcube # add permision to read
 ...
-
 ~~~
 
 4. run
