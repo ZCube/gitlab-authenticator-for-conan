@@ -40,7 +40,7 @@ except:
 def get_url():
   from os.path import expanduser
   home = expanduser("~")
-  config_file = os.path.join(home, ".conan_server", "plugins", "authenticator", "gitlabauth.json")
+  config_file = os.path.join(home, ".conan_server", "gitlabauth.conf")
   if not os.path.exists(os.path.dirname(config_file)):
     os.makedirs(os.path.dirname(config_file))
   config = configparser.ConfigParser()

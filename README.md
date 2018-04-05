@@ -4,7 +4,7 @@
 
 1. copy gitlab_authenticator.py to ~/.conan_server/plugins/authenticator
 
-2. create ~/.conan_server/plugins/authenticator/gitlabauth.json
+2. create ~/.conan_server/gitlabauth.json
 
 ~~~
 [gitlab]
