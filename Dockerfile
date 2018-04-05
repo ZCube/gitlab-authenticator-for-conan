@@ -2,6 +2,10 @@ FROM python:alpine
 MAINTAINER ZCube<zcube@zcube.kr>
 # forked from https://github.com/cguentherTUChemnitz/docker-conan-server
 
+# for letsencrypt
+RUN apk add --no-cache ca-certificates && \
+    update-ca-certificates
+    
 VOLUME /conan
 RUN pip install --no-cache-dir conan python-gitlab
 RUN adduser -S conan -h /conan -s /bin/sh
