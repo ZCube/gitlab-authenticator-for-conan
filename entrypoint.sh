@@ -6,5 +6,6 @@ set -e -x
 chown conan -R /conan/.conan_server
 chown conan -R /conan
 chmod +r /conan/.conan_server/*.conf
+chmod 700 /conan/data
 cat /conan/.conan_server/gitlabauth.conf
 su -c /usr/local/bin/conan_server conan
