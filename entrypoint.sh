@@ -4,6 +4,5 @@
 set -e -x
 
 chown -R conan /conan
-find /conan
-cat /conan/.conan_server/plugins/authenticator/gitlabauth.conf
+cat /conan/.conan_server/gitlabauth.conf
 su -c /usr/local/bin/conan_server conan
