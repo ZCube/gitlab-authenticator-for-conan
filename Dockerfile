@@ -7,8 +7,9 @@ RUN pip install --no-cache-dir conan python-gitlab
 RUN adduser -S conan -h /conan -s /bin/sh
 
 ADD gitlab_authenticator.py  /conan/.conan_server/plugins/authenticator/gitlab_authenticator.py
-RUN chmod 700 /conan/.conan_server/plugins/authenticator && \
-    chown -R conan /conan
+RUN chown -R conan /conan && \
+    chmod 700 /conan/.conan_server/plugins/authenticator
+    
 
 EXPOSE 9300
 
